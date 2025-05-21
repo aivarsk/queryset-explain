@@ -1,4 +1,5 @@
 import os
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
@@ -10,6 +11,7 @@ DATABASES = {
     }
 }
 INSTALLED_APPS = (
-    "cardrange",
+    "explain",
+    "django.contrib.postgres",  # for gin_trgm_ops
 )
 SECRET_KEY = "42"
